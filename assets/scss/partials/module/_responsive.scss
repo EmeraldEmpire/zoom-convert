@@ -1,0 +1,48 @@
+.responsive {
+  padding: 80px 0;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+
+    @include mediaQuery($sm) {
+      width: 100%;
+    }
+
+    @include mediaQuery($md) {
+      width: auto;
+    }
+  }
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include mediaQuery($sm) {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    color: $fc1;
+    font-size: 1.8rem;
+
+    @include mediaQuery($md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__descr {
+    color: $fc2;
+    font: {
+      size: .94rem;
+      family: 'Roboto Light', sans-serif;
+    }
+  }
+}

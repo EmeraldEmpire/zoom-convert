@@ -1,0 +1,16 @@
+.newsletter {
+  background-color: #233537;
+
+  &__container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+}

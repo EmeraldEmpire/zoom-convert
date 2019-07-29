@@ -1,0 +1,62 @@
+.modern-design {
+  background-color: $pc1;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    
+    @include mediaQuery($md) {
+      &--left {
+        position: relative;
+        z-index: 1;
+        width: 40%;
+        transform: translateY(25%)
+      }
+
+      &--right {
+        width: 60%;
+      }
+    }
+
+    &-description {
+      color: #fff;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 50%;
+    max-width: 220px;
+    margin: auto;
+
+    @include mediaQuery($md) {
+      width: 100%;
+    }
+  }
+
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &-sub {
+      margin-top: .625rem;
+      padding: 0 .25rem;
+      color: #000;
+      display: block;
+      font-size: .94rem;
+      font-weight: 700;
+      text-transform: capitalize
+    }
+  }
+
+  &__p {
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,47 @@
+.quote {
+  background-color: $pc3;
+  color: #fff;
+
+  &__container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__icon-container {
+    background-color: $fc1;
+    display: inline-block;
+    padding: .625rem;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    line-height: 1;
+    font-size: 1rem;
+  }
+
+  &__text {
+    font-size: 1.25rem;
+  }
+
+  &__name {
+    margin-top: 10px;
+    display: block;
+    font-size: .83rem;
+  }
+
+  &__navigation {
+    margin-top: 40px;
+  }
+
+  &__arrow {
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 15px;
+  }
+}

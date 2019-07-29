@@ -1,0 +1,31 @@
+.hero {
+  background-color: $pc1;
+
+  &-container {
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mediaQuery($md) {
+      height: 550px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    color: #fff;
+    font: {
+      size: 2.5rem;
+      family: 'Roboto Thin', sans-serif;
+    }
+
+    @include mediaQuery($md) {
+      font-size: 4rem;
+    }
+  }
+}

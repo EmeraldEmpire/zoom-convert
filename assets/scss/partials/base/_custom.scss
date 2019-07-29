@@ -1,0 +1,21 @@
+html,
+button {
+  font-family: 'Roboto Regular', sans-serif;
+}
+
+.cf::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.container-fluid-1200 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 60px 0;
+}

@@ -1,0 +1,45 @@
+.burger {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 15%;
+  background-color: #3fd2ce;
+  height: 34px;
+  width: 34px;
+  transform: translateX(-240px);
+  transition: transform .3s ease-in-out;
+  cursor: pointer;
+
+  @include mediaQuery($md) {
+    display: none;
+  }
+  
+  &__bar,
+  &__bar:before,
+  &__bar:after {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    height: 4px;
+    width: 25px;
+    background-color: #d7f5e9;
+    transition: transform .3s, 
+                background-color .3s, 
+                top .3s;
+    content: " ";
+  }
+
+  &__bar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:before {
+      top: -.5rem;
+    }
+
+    &:after {
+      top: .5rem;
+    }
+  }
+}

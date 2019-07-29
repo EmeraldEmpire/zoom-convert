@@ -1,0 +1,13 @@
+.cta--transparent {
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border: 2px solid $pc1;
+  border-radius: 0;
+  font-size: .83rem;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: $pc1;
+    color: #000;
+  }
+}

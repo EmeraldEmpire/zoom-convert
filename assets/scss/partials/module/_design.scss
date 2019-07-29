@@ -1,0 +1,42 @@
+.design {
+  position: relative;
+  padding: 80px 0 0 0;
+  background-color: #ff6c54;
+
+  .desgin__content {
+    position: relative;
+  }
+
+  &__browser {
+    position: relative;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+
+    &-img {
+      position: relative;
+
+      &:nth-child(1) {
+        left: 25%;
+      }
+
+      &:nth-child(2) {
+        z-index: 1;
+      }
+
+      &:nth-child(3) {
+        right: 25%;
+      }
+      &-link {
+        display: block;
+        width: 100%;
+
+        @include mediaQuery($xl) {
+          width: auto;
+        }
+      }
+    }
+  }
+}

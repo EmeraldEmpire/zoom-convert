@@ -1,0 +1,47 @@
+.about {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include mediaQuery($md) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    
+    @include mediaQuery($md) {
+      max-width: 50%;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 570px;
+  }
+
+  &__description {
+    padding: 1.5rem;
+    color: $fc1;
+
+    @include mediaQuery($sm) {
+      padding: 1.5rem 2.5rem;
+    }
+
+    &-title {
+      margin: 0;
+      font-size: 1.25rem;
+
+      @include mediaQuery($md) {
+        text-align: left;
+      }
+    }
+
+    &-p {
+      margin-top: 2rem;
+      font-size: .8rem;
+    }
+  }
+}

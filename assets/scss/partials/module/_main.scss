@@ -1,0 +1,10 @@
+.main {
+  padding: 50px 0 0 0;
+  margin-bottom: 450px;
+  background-color: #fff;
+
+  @include mediaQuery($md) {
+    padding: 80px 0 0 0;
+    margin-bottom: 480px;
+  }
+}
